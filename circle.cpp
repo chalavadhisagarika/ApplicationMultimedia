@@ -11,12 +11,14 @@ int main( int argc, const char** argv )
         Mat img(500, 500, CV_8UC3, Scalar(255,255,255));
         namedWindow("Original", WINDOW_AUTOSIZE);
         
-        Point p0(100,20);
-        Point p1(100,100);
-        circle(img,(p0,p1), 63, (0,0,255), -1);
+        Point p0(250,250);
+        circle(img,p0,100,Scalar( 255, 0, 0 ),1,8,0);
         imshow("Original", img);
+        
         waitKey(0);
         destroyWindow("img");
 
         return 0;
 }
+
+
