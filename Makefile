@@ -1,9 +1,9 @@
 .PHONY: all
 
 all: clean
-	g++ -std=c++1y -o project.o -c project.cpp -Wall -O `pkg-config --cflags --libs opencv`
-	g++ -o project project.o `pkg-config --cflags --libs opencv`
+	g++ -std=c++1y -o circle.o -c circle.cpp -Wall -O `pkg-config --cflags --libs opencv`
+	g++ -o circle circle.o `pkg-config --cflags --libs opencv`
 
 clean:
-	rm -f *.o project
+	rm -f *.o circle
 
